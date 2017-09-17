@@ -26,7 +26,7 @@ public class CustomerServiceImpl implements CustomerService {
 				// 2 创建PageBean对象
 					PageBean pageBean=new PageBean(currentPage, totalCount, pageSize);
 				// 3 调用Dao查询分页列表数据
-					List<Customer> cutList=customerDao.getPageList(criteria,pageBean.getStart(),pageSize);
+					List<Customer> cutList=customerDao.getPageList(criteria,pageBean.getStart(),pageBean.getPageSize());
 				// 4 列表数据放入pageBean中.并返回
 					pageBean.setList(cutList);
 					return pageBean;

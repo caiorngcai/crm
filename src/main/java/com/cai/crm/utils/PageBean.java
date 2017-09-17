@@ -14,11 +14,11 @@ public class PageBean {
 		this.pageSize=pageSize;
 		if(this.currentPage==null)
 		{
-			currectPage=1;
+			this.currentPage=1;
 		}
 		if(this.pageSize==null)
 		{
-			pageSize=3;
+			this.pageSize=3;
 		}
 		this.totalPage=(this.totalCount+this.pageSize-1)/this.pageSize;
 		if(this.currentPage<1)

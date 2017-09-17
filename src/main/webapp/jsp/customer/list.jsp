@@ -77,7 +77,7 @@
 								<TR>
 									<TD height=25>
 									<FORM id="pageForm" name="customerForm"
-										action="${pageContext.request.contextPath }/CustomerAction_list"
+										action="${pageContext.request.contextPath }/CustomerAction_list.action"
 										method=post>
 										<!-- 隐藏域.当前页码 -->
 										<input type="hidden" name="currentPage" id="currentPageInput" value="<s:property value="#pageBean.currentPage" />" />

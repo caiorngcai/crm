@@ -13,6 +13,7 @@
 	<constant name="struts.ui.theme" value="simple"></constant>
 	<!-- 扩展名 -->
 	<constant name="struts.action.extension" value="action"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/> 
 
 	<!-- 通用package -->
 	<package name="customer" namespace="/" extends="struts-default">
