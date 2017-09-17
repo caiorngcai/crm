@@ -1,13 +1,20 @@
 package com.cai.crm.service;
 
+import org.hibernate.criterion.DetachedCriteria;
+
 import com.cai.crm.domain.Customer;
+import com.cai.crm.utils.PageBean;
 
 public interface CustomerService {
 
+
 	/**
-	 * 根据ID获取客户信息
-	 * @param id
+	 * 服务层获得pagebean的方法
+	 * @param criteria
+	 * @param pageSiae 
+	 * @param currentPage 
 	 * @return
 	 */
-	public Customer findById(Long id);
+	public PageBean getPageBean(DetachedCriteria criteria, Integer currentPage, Integer pageSize);
+	
 }

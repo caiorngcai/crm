@@ -1,67 +1,66 @@
 package com.cai.crm.domain;
 
 public class Customer {
-	private Long custId;
-	private String custName;
-	private Long custUserId;
-	private Long custCreateId;
-	private String custIndustry;
-	private String custLevel;
-	private String custLinkman;
-	private String custPhone;
-	private String custMobile;
-	public Long getCustId() {
-		return custId;
+	
+	/*
+	 * CREATE TABLE `cst_customer` (
+	  `cust_id` BIGINT(32) NOT NULL AUTO_INCREMENT COMMENT '客户编号(主键)',
+	  `cust_name` VARCHAR(32) NOT NULL COMMENT '客户名称(公司名称)',
+	  `cust_source` VARCHAR(32) DEFAULT NULL COMMENT '客户信息来源',
+	  `cust_industry` VARCHAR(32) DEFAULT NULL COMMENT '客户所属行业',
+	  `cust_level` VARCHAR(32) DEFAULT NULL COMMENT '客户级别',
+	  `cust_linkman` VARCHAR(64) DEFAULT NULL COMMENT '联系人',
+	  `cust_phone` VARCHAR(64) DEFAULT NULL COMMENT '固定电话',
+	  `cust_mobile` VARCHAR(16) DEFAULT NULL COMMENT '移动电话',
+	  PRIMARY KEY (`cust_id`)
+	) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+	 */
+	private Long cust_id;
+	
+	private String cust_name;
+	//private String cust_source;
+	//private String cust_industry;
+	//private String cust_level;
+	private String cust_linkman;
+	private String cust_phone;
+	private String cust_mobile;
+	
+	public Long getCust_id() {
+		return cust_id;
 	}
-	public void setCustId(Long custId) {
-		this.custId = custId;
+	public void setCust_id(Long cust_id) {
+		this.cust_id = cust_id;
 	}
-	public String getCustName() {
-		return custName;
+	public String getCust_name() {
+		return cust_name;
 	}
-	public void setCustName(String custName) {
-		this.custName = custName;
+	public void setCust_name(String cust_name) {
+		this.cust_name = cust_name;
 	}
-	public Long getCustUserId() {
-		return custUserId;
+	public String getCust_linkman() {
+		return cust_linkman;
 	}
-	public void setCustUserId(Long custUserId) {
-		this.custUserId = custUserId;
+	public void setCust_linkman(String cust_linkman) {
+		this.cust_linkman = cust_linkman;
 	}
-	public Long getCustCreateId() {
-		return custCreateId;
+	public String getCust_phone() {
+		return cust_phone;
 	}
-	public void setCustCreateId(Long custCreateId) {
-		this.custCreateId = custCreateId;
+	public void setCust_phone(String cust_phone) {
+		this.cust_phone = cust_phone;
 	}
-	public String getCustIndustry() {
-		return custIndustry;
+	public String getCust_mobile() {
+		return cust_mobile;
 	}
-	public void setCustIndustry(String custIndustry) {
-		this.custIndustry = custIndustry;
+	public void setCust_mobile(String cust_mobile) {
+		this.cust_mobile = cust_mobile;
 	}
-	public String getCustLevel() {
-		return custLevel;
+	@Override
+	public String toString() {
+		return "Customer [cust_id=" + cust_id + ", cust_name=" + cust_name + "]";
 	}
-	public void setCustLevel(String custLevel) {
-		this.custLevel = custLevel;
-	}
-	public String getCustLinkman() {
-		return custLinkman;
-	}
-	public void setCustLinkman(String custLinkman) {
-		this.custLinkman = custLinkman;
-	}
-	public String getCustPhone() {
-		return custPhone;
-	}
-	public void setCustPhone(String custPhone) {
-		this.custPhone = custPhone;
-	}
-	public String getCustMobile() {
-		return custMobile;
-	}
-	public void setCustMobile(String custMobile) {
-		this.custMobile = custMobile;
-	}
+	
+	
+	
+
 }

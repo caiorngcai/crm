@@ -1,13 +1,11 @@
 package com.cai.crm.dao;
 
+import java.util.List;
+
+import org.hibernate.criterion.DetachedCriteria;
+
 import com.cai.crm.domain.*;;
 
-public interface CustomerDao {
-	/**
-	 * 根据ID获取客户信息
-	 * @param id
-	 * @return
-	 */
-	public Customer findById(Long id);
-
+public interface CustomerDao extends BaseDao<Customer>{
+	
 }
